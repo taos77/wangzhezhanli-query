@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀战力查询</title>
+  </head>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <style type="text/css" media="all">
+       #course a{
+  text-decoration: none;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(252, 249, 249);
+  background-color: black;
+  margin-bottom: 50px;
+ }
+  </style>
+  <body>
+    <!-- alert 部分 -->
+    <div class="container contain-none">
+      <br />
+      <div class="info-name-tpist">
+        
+      </div>
+      <div class="info-name">
+        英雄：
+        <div class="heroName"></div>
+      </div>
+      <div class="info-name">
+        地区:
+        <div class="area"></div>
+      </div>
+      <div class="info-name">
+        区最低排名：
+        <div class="areaPower"></div>
+      </div>
+      <div class="info-name">
+        市区：
+        <div class="city"></div>
+      </div>
+      <div class="info-name">
+        市最低排名：
+        <div class="cityPower"></div>
+      </div>
+      <div class="info-name">
+        省：
+        <div class="province"></div>
+      </div>
+      <div class="info-name">
+        省最低排名：
+        <div class="provincePower"></div>
+      </div>
+      <div class="info-name"><div class="updatetime">更新时间：</div></div>
+      <div class="close"></div>
+      <button id="btn-close">关闭</button>
+    </div>
+<div class="search">
+    <select id="selectbox">
+      <option value="qq">QQ区</option>
+      <option value="wx">微信区</option>
+    </select>
+    <input placeholder="请输入英雄名称" type="text" id="search-box">
+    <div id="search-btn">搜索</div>
+
+</div>
+<div id="course"><a href="https://mp.weixin.qq.com/s/7ZIZZ2jhkvYJaClibzSsjw">改战区教程</a></div>
+    <!-- 创建公告栏 -->
+    <div id="anounce">
+  
+      <img src="./img/公告.png" alt="公告">
+      <div class="anounce-text">由公众号：失落宝藏啊，永久免费提供，每周一会更新英雄排名</div>
+    
+    </div>
+ <!-- 创建整体部分容器 -->
+<div class="big-contain">
+  
+   <!-- 第一张 -->
+    <div class="contain">
+      <!-- 张良卡片部分 -->
+      <div class="item">
+        <div class="info">
+          <div class="btn-qq">点击查询QQ战力</div>
+          <div class="btn-wx">点击查询微信战力</div>
+        </div>
+        <div class="info name">张良</div>
+        <div class="info">
+          <img src="./img/张良.jpeg" alt="张良" />
+        </div>
+      </div>
+
+      <!-- 马超部分卡片 -->
+      <div class="item">
+        <div class="info">
+          <div class="btn-qq">点击查询QQ战力</div>
+          <div class="btn-wx">点击查询微信战力</div>
+        </div>
+        <div class="info name">马超</div>
+        <div class="info">
+          <img src="./img/马超.jpg" alt="张良" />
+        </div>
+      </div>
+    
+  </div>
+    <!-- 第二张 -->
+     <div class="contain">
+       <!-- 廉颇卡片部分 -->
+    <div class="item">
+    <div class="info">
+      <div class="btn-qq">点击查询QQ战力</div>
+      <div class="btn-wx">点击查询微信战力</div>
+    </div>
+    <div class="info name">廉颇</div>
+    <div class="info">
+      <img src="./img/廉颇.jpg" alt="廉颇" />
+    </div>
+  </div>
+   <!-- 安琪拉卡片部分 -->
+   <div class="item">
+    <div class="info">
+      <div class="btn-qq">点击查询QQ战力</div>
+      <div class="btn-wx">点击查询微信战力</div>
+    </div>
+    <div class="info name">安琪拉</div>
+    <div class="info">
+      <img src="./img/安琪拉.jpeg" alt="安琪拉" />
+    </div>
+  </div>
+</div>
+ <!-- 第三张 -->
+<div class="contain">
+  <!-- 小乔卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">小乔</div>
+<div class="info">
+ <img src="./img/小乔.jpeg" alt="小乔" />
+</div>
+</div>
+<!-- 武则天卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">武则天</div>
+<div class="info">
+ <img src="./img/武则天.jpg" alt="武则天" />
+</div>
+</div>
+</div>
+<!-- 第四张 -->
+<div class="contain">
+
+  <!-- 大乔卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">大乔</div>
+<div class="info">
+ <img src="./img/大乔.jpeg" alt="大乔" />
+</div>
+</div>
+<!-- 李白卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">李白</div>
+<div class="info">
+ <img src="./img/李白.jpeg" alt="李白" />
+</div>
+</div>
+</div>
+<!-- 第五张 -->
+<div class="contain">
+  <!-- 韩信卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">韩信</div>
+<div class="info">
+ <img src="./img/韩信.jpeg" alt="韩信" />
+</div>
+</div>
+<!-- 盘古天卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">盘古</div>
+<div class="info">
+ <img src="./img/盘古.jpeg" alt="盘古" />
+</div>
+</div>
+</div>
+<!-- 第六张 -->
+<div class="contain">
+  <!-- 艾琳卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">艾琳</div>
+<div class="info">
+ <img src="./img/艾琳.jpeg" alt="艾琳" />
+</div>
+</div>
+<!-- 夏洛特天卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">夏洛特</div>
+<div class="info">
+ <img src="./img/夏洛特.jpeg" alt="夏洛特" />
+</div>
+</div>
+</div>
+<div class="contain">
+  <!-- 澜卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">澜</div>
+<div class="info">
+ <img src="./img/澜.jpeg" alt="澜" />
+</div>
+</div>
+<!-- 司空震卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">司空震</div>
+<div class="info">
+ <img src="./img/司空震.jpeg" alt="司空震" />
+</div>
+</div>
+</div>
+<div class="contain">
+  <!-- 吕布卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">吕布</div>
+<div class="info">
+ <img src="./img/吕布.jpeg" alt="吕布" />
+</div>
+</div>
+<!-- 钟无艳卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">钟无艳</div>
+<div class="info">
+ <img src="./img/钟无艳.jpeg" alt="钟无艳" />
+</div>
+</div>
+</div>
+
+<div class="contain">
+  <!-- 达摩卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">达摩</div>
+<div class="info">
+ <img src="./img/达摩.jpeg" alt="达摩" />
+</div>
+</div>
+<!-- 老夫子卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">老夫子</div>
+<div class="info">
+ <img src="./img/老夫子.jpeg" alt="老夫子" />
+</div>
+</div>
+</div>
+<div class="contain">
+  <!-- 赵云卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">赵云</div>
+<div class="info">
+ <img src="./img/赵云.jpeg" alt="赵云" />
+</div>
+</div>
+<!-- 露娜卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">露娜</div>
+<div class="info">
+ <img src="./img/露娜.jpeg" alt="露娜" />
+</div>
+
+</div>
+</div>
+<div class="contain">
+  <!-- 宫本武藏卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">宫本武藏</div>
+<div class="info">
+ <img src="./img/宫本武藏.jpeg" alt="宫本武藏" />
+</div>
+</div>
+<!-- 花木兰卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">花木兰</div>
+<div class="info">
+ <img src="./img/花木兰.jpeg" alt="花木兰" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 亚瑟卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">亚瑟</div>
+<div class="info">
+ <img src="./img/亚瑟.jpeg" alt="亚瑟" />
+</div>
+</div>
+<!-- 刘备卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">刘备</div>
+<div class="info">
+ <img src="./img/刘备.jpeg" alt="刘备" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 杨戬卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">杨戬</div>
+<div class="info">
+ <img src="./img/杨戬.jpeg" alt="杨戬" />
+</div>
+</div>
+<!-- 雅典娜卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">雅典娜</div>
+<div class="info">
+ <img src="./img/雅典娜.jpeg" alt="雅典娜" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 哪吒卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">哪吒</div>
+<div class="info">
+ <img src="./img/哪吒.jpeg" alt="哪吒" />
+</div>
+</div>
+<!-- 凯卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">凯</div>
+<div class="info">
+ <img src="./img/凯.jpeg" alt="凯" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 狂铁卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">狂铁</div>
+<div class="info">
+ <img src="./img/狂铁.jpeg" alt="狂铁" />
+</div>
+</div>
+<!-- 李信卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">李信</div>
+<div class="info">
+ <img src="./img/李信.jpeg" alt="李信" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 蒙恬卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">蒙恬</div>
+<div class="info">
+ <img src="./img/蒙恬.jpeg" alt="蒙恬" />
+</div>
+</div>
+<!-- 曜卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">曜</div>
+<div class="info">
+ <img src="./img/曜.jpeg" alt="曜" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 墨子卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">墨子</div>
+<div class="info">
+ <img src="./img/墨子.jpeg" alt="墨子" />
+</div>
+</div>
+<!-- 妲己卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">妲己</div>
+<div class="info">
+ <img src="./img/妲己.jpeg" alt="妲己" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 高渐离卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">高渐离</div>
+<div class="info">
+ <img src="./img/高渐离.jpeg" alt="高渐离" />
+</div>
+</div>
+<!-- 嬴政卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">嬴政</div>
+<div class="info">
+ <img src="./img/嬴政.jpeg" alt="嬴政" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 扁鹊卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">扁鹊</div>
+<div class="info">
+ <img src="./img/扁鹊.jpeg" alt="扁鹊" />
+</div>
+</div>
+<!-- 周瑜卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">周瑜</div>
+<div class="info">
+ <img src="./img/周瑜.jpeg" alt="周瑜" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 芈月卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">芈月</div>
+<div class="info">
+ <img src="./img/芈月.jpeg" alt="芈月" />
+</div>
+</div>
+<!-- 貂蝉卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">貂蝉</div>
+<div class="info">
+ <img src="./img/貂蝉.jpeg" alt="貂蝉" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 甄姬卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">甄姬</div>
+<div class="info">
+ <img src="./img/甄姬.jpeg" alt="甄姬" />
+</div>
+</div>
+<!-- 王昭君卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">王昭君</div>
+<div class="info">
+ <img src="./img/王昭君.jpeg" alt="王昭君" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 姜子牙卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">姜子牙</div>
+<div class="info">
+ <img src="./img/姜子牙.jpeg" alt="姜子牙" />
+</div>
+</div>
+<!-- 不知火舞卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">不知火舞</div>
+<div class="info">
+ <img src="./img/不知火舞.jpeg" alt="不知火舞" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 钟馗卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">钟馗</div>
+<div class="info">
+ <img src="./img/钟馗.jpeg" alt="钟馗" />
+</div>
+</div>
+<!-- 干将莫邪卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">干将莫邪</div>
+<div class="info">
+ <img src="./img/干将莫邪.jpeg" alt="干将莫邪" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 诸葛亮卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">诸葛亮</div>
+<div class="info">
+ <img src="./img/诸葛亮.jpeg" alt="诸葛亮" />
+</div>
+</div>
+<!-- 杨玉环卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">杨玉环</div>
+<div class="info">
+ <img src="./img/杨玉环.jpeg" alt="杨玉环" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 女娲卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">女娲</div>
+<div class="info">
+ <img src="./img/女娲.jpeg" alt="女娲" />
+</div>
+</div>
+<!-- 弈星卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">弈星</div>
+<div class="info">
+ <img src="./img/弈星.jpeg" alt="弈星" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 米莱狄卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">米莱狄</div>
+<div class="info">
+ <img src="./img/米莱狄.jpeg" alt="米莱狄" />
+</div>
+</div>
+<!-- 沈梦溪卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">沈梦溪</div>
+<div class="info">
+ <img src="./img/沈梦溪.jpeg" alt="沈梦溪" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 上官婉儿卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">上官婉儿</div>
+<div class="info">
+ <img src="./img/上官婉儿.jpeg" alt="上官婉儿" />
+</div>
+</div>
+<!-- 嫦娥卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">嫦娥</div>
+<div class="info">
+ <img src="./img/嫦娥.jpeg" alt="嫦娥" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 白起卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">白起</div>
+<div class="info">
+ <img src="./img/白起.jpeg" alt="白起" />
+</div>
+</div>
+<!-- 西施卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">西施</div>
+<div class="info">
+ <img src="./img/西施.jpeg" alt="西施" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 夏侯惇卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">夏侯惇</div>
+<div class="info">
+ <img src="./img/夏侯惇.jpeg" alt="夏侯惇" />
+</div>
+</div>
+<!-- 程咬金卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">程咬金</div>
+<div class="info">
+ <img src="./img/程咬金.jpeg" alt="程咬金" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 刘邦卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">刘邦</div>
+<div class="info">
+ <img src="./img/刘邦.jpeg" alt="刘邦" />
+</div>
+</div>
+<!-- 项羽卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">项羽</div>
+<div class="info">
+ <img src="./img/项羽.jpeg" alt="项羽" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 牛魔卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">牛魔</div>
+<div class="info">
+ <img src="./img/牛魔.jpeg" alt="牛魔" />
+</div>
+</div>
+<!-- 张飞卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">张飞</div>
+<div class="info">
+ <img src="./img/张飞.jpeg" alt="张飞" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 苏烈卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">苏烈</div>
+<div class="info">
+ <img src="./img/苏烈.jpeg" alt="苏烈" />
+</div>
+</div>
+<!-- 东皇太一卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">东皇太一</div>
+<div class="info">
+ <img src="./img/东皇太一.jpeg" alt="东皇太一" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 梦奇卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">梦奇</div>
+<div class="info">
+ <img src="./img/梦奇.jpeg" alt="梦奇" />
+</div>
+</div>
+<!-- 孙策卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">孙策</div>
+<div class="info">
+ <img src="./img/孙策.jpeg" alt="孙策" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 阿古朵卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">阿古朵</div>
+<div class="info">
+ <img src="./img/阿古朵.jpeg" alt="阿古朵" />
+</div>
+</div>
+<!-- 猪八戒卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">猪八戒</div>
+<div class="info">
+ <img src="./img/猪八戒.jpeg" alt="猪八戒" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 阿珂卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">阿珂</div>
+<div class="info">
+ <img src="./img/阿珂.jpeg" alt="阿珂" />
+</div>
+</div>
+<!-- 兰陵王卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">兰陵王</div>
+<div class="info">
+ <img src="./img/兰陵王.jpeg" alt="兰陵王" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 橘右京卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">橘右京</div>
+<div class="info">
+ <img src="./img/橘右京.jpeg" alt="橘右京" />
+</div>
+</div>
+<!-- 孙悟空卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">孙悟空</div>
+<div class="info">
+ <img src="./img/孙悟空.jpeg" alt="孙悟空" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 娜可露露卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">娜可露露</div>
+<div class="info">
+ <img src="./img/娜可露露.jpeg" alt="娜可露露" />
+</div>
+</div>
+<!-- 百里玄策卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">百里玄策</div>
+<div class="info">
+ <img src="./img/百里玄策.jpeg" alt="百里玄策" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 裴擒虎卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">裴擒虎</div>
+<div class="info">
+ <img src="./img/裴擒虎.jpeg" alt="裴擒虎" />
+</div>
+</div>
+<!-- 元歌卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">元歌</div>
+<div class="info">
+ <img src="./img/元歌.jpeg" alt="元歌" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 司马懿卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">司马懿</div>
+<div class="info">
+ <img src="./img/司马懿.jpeg" alt="司马懿" />
+</div>
+</div>
+<!-- 孙尚香卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">孙尚香</div>
+<div class="info">
+ <img src="./img/孙尚香.jpeg" alt="孙尚香" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 镜卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">镜</div>
+<div class="info">
+ <img src="./img/镜.jpeg" alt="镜" />
+</div>
+</div>
+<!-- 鲁班七号卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">鲁班七号</div>
+<div class="info">
+ <img src="./img/鲁班七号.jpeg" alt="鲁班七号" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 云中君卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">云中君</div>
+<div class="info">
+ <img src="./img/云中君.jpeg" alt="云中君" />
+</div>
+</div>
+<!-- 马可波罗卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">马可波罗</div>
+<div class="info">
+ <img src="./img/马可波罗.jpeg" alt="马可波罗" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 后羿卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">后羿</div>
+<div class="info">
+ <img src="./img/后羿.jpeg" alt="后羿" />
+</div>
+</div>
+<!-- 李元芳卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">李元芳</div>
+<div class="info">
+ <img src="./img/李元芳.jpeg" alt="李元芳" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 狄仁杰卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">狄仁杰</div>
+<div class="info">
+ <img src="./img/狄仁杰.jpeg" alt="狄仁杰" />
+</div>
+</div>
+<!-- 百里守约卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">百里守约</div>
+<div class="info">
+ <img src="./img/百里守约.jpeg" alt="百里守约" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 成吉思汗卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">成吉思汗</div>
+<div class="info">
+ <img src="./img/成吉思汗.jpeg" alt="成吉思汗" />
+</div>
+</div>
+<!-- 虞姬卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">虞姬</div>
+<div class="info">
+ <img src="./img/虞姬.jpeg" alt="虞姬" />
+</div>
+
+</div>
+</div>
+
+<div class="contain">
+  <!-- 公孙离卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">公孙离</div>
+<div class="info">
+ <img src="./img/公孙离.jpeg" alt="公孙离" />
+</div>
+</div>
+  <!-- 曹操卡片部分 -->
+  <div class="item">
+    <div class="info">
+     <div class="btn-qq">点击查询QQ战力</div>
+     <div class="btn-wx">点击查询微信战力</div>
+    </div>
+    <div class="info name">曹操</div>
+    <div class="info">
+     <img src="./img/曹操.jpeg" alt="曹操" />
+    </div>
+    </div>
+</div>
+
+<div class="contain">
+  <!-- 刘禅卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">刘禅</div>
+<div class="info">
+ <img src="./img/刘禅.jpeg" alt="刘禅" />
+</div>
+</div>
+<!-- 蒙犽卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">蒙犽</div>
+<div class="info">
+ <img src="./img/蒙犽.jpeg" alt="蒙犽" />
+</div>
+</div>
+</div>
+
+<div class="contain">
+  <!-- 庄周卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">庄周</div>
+<div class="info">
+ <img src="./img/庄周.jpeg" alt="庄周" />
+</div>
+</div>
+<!-- 孙膑卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">孙膑</div>
+<div class="info">
+ <img src="./img/孙膑.jpeg" alt="孙膑" />
+</div>
+</div>
+</div>
+
+<div class="contain">
+  <!-- 伽罗卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">伽罗</div>
+<div class="info">
+ <img src="./img/伽罗.jpeg" alt="伽罗" />
+</div>
+</div>
+<!-- 蔡文姬卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">蔡文姬</div>
+<div class="info">
+ <img src="./img/蔡文姬.jpeg" alt="蔡文姬" />
+</div>
+</div>
+</div>
+
+<div class="contain">
+  <!-- 太乙真人卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">太乙真人</div>
+<div class="info">
+ <img src="./img/太乙真人.jpeg" alt="太乙真人" />
+</div>
+</div>
+<!-- 鬼谷子卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">鬼谷子</div>
+<div class="info">
+ <img src="./img/鬼谷子.jpeg" alt="鬼谷子" />
+</div>
+</div>
+</div>
+
+<div class="contain">
+  <!-- 明世隐卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">明世隐</div>
+<div class="info">
+ <img src="./img/明世隐.jpeg" alt="明世隐" />
+</div>
+</div>
+<!-- 盾山卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">盾山</div>
+<div class="info">
+ <img src="./img/盾山.jpeg" alt="盾山" />
+</div>
+</div>
+</div>
+
+<div class="contain">
+  <!-- 瑶卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">瑶</div>
+<div class="info">
+ <img src="./img/瑶.jpeg" alt="瑶" />
+</div>
+</div>
+<!-- 鲁班大师卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">鲁班大师</div>
+<div class="info">
+ <img src="./img/鲁班大师.jpeg" alt="鲁班大师" />
+</div>
+</div>
+</div>
+
+<div class="contain">
+  <!-- 关羽卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">关羽</div>
+<div class="info">
+ <img src="./img/关羽.jpeg" alt="关羽" />
+</div>
+</div>
+<!-- 典韦卡片部分 -->
+<div class="item">
+<div class="info">
+ <div class="btn-qq">点击查询QQ战力</div>
+ <div class="btn-wx">点击查询微信战力</div>
+</div>
+<div class="info name">典韦</div>
+<div class="info">
+ <img src="./img/典韦.jpeg" alt="典韦" />
+</div>
+</div>
+</div>
+
+</div>
+    <script src="./js/tools.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/check.js"></script>
+  </body>
+</html>
