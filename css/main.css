@@ -144,6 +144,10 @@ body{
     width: 80px;
     border-radius: 15px;
     background-color: rgb(19, 226, 99);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
  .big-contain{
   justify-content: space-around;
@@ -187,8 +191,14 @@ body{
   height: 80px;
   border-radius: 20px;
 }
+#search-box{
+  width: 150px;
+}
+#search-btn{
+  width: 80px;
+}
 .search{
-  width: 200px;
+  width: 300px;
 }
 .container {
   width: 60%;
@@ -201,7 +211,7 @@ body{
   flex-direction: column;
   position: fixed;
   top: 10%;
-  left: 15%;
+  left: 12%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px #00000028;
