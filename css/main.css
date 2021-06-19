@@ -50,7 +50,7 @@ body{
     margin: 0 20px;
     font-weight: 700;
     font-size: 20px;
-    writing-mode:vertical-lr
+    
 }
 
 
@@ -172,9 +172,7 @@ body{
     /* margin-left: 0; */
     width: 100px;
 }
-  .contain .item  .name{
-	    writing-mode: lr;
-	}
+  
   .contain{
     width: 100%;
     flex-flow: column
