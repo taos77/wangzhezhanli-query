@@ -172,6 +172,9 @@ body{
     /* margin-left: 0; */
     width: 100px;
 }
+  .contain .item  .name{
+	    writing-mode: lr;
+	}
   .contain{
     width: 100%;
     flex-flow: column
